@@ -56,8 +56,3 @@ def number_odd_or_even(n):
     """prints a HTML page only if n is an integer
     """
     return render_template("6-number_odd_or_even.html", n=n)
-
-
-if __name__ == '__main__':
-    app.run(debug=True)
-    app.run(host='0.0.0.0', port=5000)
