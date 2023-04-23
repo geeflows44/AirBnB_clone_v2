@@ -1,4 +1,5 @@
-sk web app startsp
+#!/usr/bin/python3
+"""flask web app startsp
 """
 from flask import Flask
 
