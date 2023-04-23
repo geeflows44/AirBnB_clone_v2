@@ -1,4 +1,5 @@
-sk web app starts
+#!/usr/bin/python3
+"""Flask web app starts
 """
 from flask import Flask
 
