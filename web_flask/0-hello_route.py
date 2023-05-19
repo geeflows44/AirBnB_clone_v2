@@ -1,12 +1,17 @@
 #!/usr/bin/python3
-   """Script that starts a Flask web application"""
-   from flask import Flask
-   app = Flask(__name__)
+""" A script that starts a flask we application """
+from flask import Flask
 
-   @app.route('/airbnb-onepage/', strict_slashes=False)
-   def hello():
-       return "Hello HBNB!"
+app = Flask(__name__)
 
-   if __name__ == '__main__':
-       app.run(host='0.0.0.0', port=5000)
+app.url_map.strict_slashes = False
 
+
+@app.route('/')
+def home_page():
+    """" Show a message when accessed """
+    return 'Hello HBNB!'
+
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=5000)
